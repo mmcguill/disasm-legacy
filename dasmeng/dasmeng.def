@@ -1,0 +1,9 @@
+LIBRARY	dasmeng
+
+EXPORTS
+DisassembleEPs
+WIN_DisassembleEPs
+GetListings_Manager
+GetSymTable
+CreateDisasm
+CloseDisasm

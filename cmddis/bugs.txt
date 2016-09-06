@@ -1,0 +1,47 @@
+Bugs & TODO's
+-------------
+
+0.	there is fuck all checking of bounds of stream as we access it, fix priority!
+
+1.	there is a bug with instructions like 
+
+	movq2dq and movdq2q
+	maskmovq maskmovdqu
+
+	IDA also has this bug, 
+
+	These instructions take registers only as both param's
+	not memory addresses, however if the modrm specifies
+	a memory address, ie mod < 3, or modrm < 0xC0, then
+	both disassemblers will disassemble these instructions
+	as having a memory operand despite this being illegal
+	code, do something about this.!! :)
+
+	see new manuals they include N and U new addressing
+	methods which seem to deal with this, also vulnerable
+	are pmovmskb pextrw which use two registers as in
+	Gd, Pq but Pq can only specify a register
+
+2.	Illegal Opcodes should be disassembled and then caught 
+	in the post disasm check, so we can have an option
+	to allow illegal instructions
+
+3.	MOV Rd, Td (0x0F26), MOV Td, Rd (0x0F26) available on pentium pro 
+	and pentium II only are not supported
+
+4.	No checking of protected or real mode instructions, 
+	ie whether they are allowed
+
+5.	No implementation of processor type restriction at all.
+
+6.	No SSE3 (This would be easy enough, but too lazy at this point)
+	also 3DNow, and some other extensions
+
+7.	the Floating point wait instruction should be combined with its
+	operation so we only produce one instruction not two. IDA does this
+	well.
+	
+8.	No post disassembly checking implemented at all!
+
+9.	Some of my ptr size prefixes disagree with IDA, but I'm pretty sure
+	I'm right, not a big deal really.

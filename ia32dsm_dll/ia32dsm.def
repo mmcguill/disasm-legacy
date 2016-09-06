@@ -1,0 +1,5 @@
+LIBRARY	ia32dsm
+
+EXPORTS
+IA32Dsm_GetLastError
+DisassembleSingleInstruction

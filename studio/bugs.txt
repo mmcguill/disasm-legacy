@@ -1,0 +1,8 @@
+1.	Imports now slightly wrong. Because of reverse import name lookup 
+	when an exe imports by ordinal, the gui says import by name when 
+	its actually imported by ordinal, this is because it sees the 
+	function has a name. Fix.
+	 
+2.	TLB import / symbols not working.
+
+3. Tab / Shift + Tab in textview doesn't move to next column

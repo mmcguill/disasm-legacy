@@ -1,0 +1,962 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Studio.ico"
+IDI_FOLDERC             ICON                    "res\\icon1.ico"
+IDI_FOLDERO             ICON                    "res\\icon2.ico"
+IDI_DOC                 ICON                    "res\\icon3.ico"
+IDI_ITEMERROR           ICON                    "res\\ico00001.ico"
+IDR_ACCELTYPE           ICON                    "res\\ico00002.ico"
+IDR_BITMAPTYPE          ICON                    "res\\ico00003.ico"
+IDR_DIALOGTYPE          ICON                    "res\\ico00004.ico"
+IDR_HEXTYPE             ICON                    "res\\icon4.ico"
+IDR_MENUTYPE            ICON                    "res\\icon5.ico"
+IDR_WORKSPACE_DASM      ICON                    "res\\idr_work.ico"
+IDR_STRINGTABLETYPE     ICON                    "res\\idr_bitm.ico"
+IDR_VERSIONTYPE         ICON                    "res\\idr_stri.ico"
+IDR_WORKSPACE_IMPEXP    ICON                    "res\\ico00007.ico"
+IDR_WORKSPACE_RESOURCES ICON                    "res\\ico00008.ico"
+IDR_ICONTYPE            ICON                    "res\\idr_acce.ico"
+IDR_DASMTYPE            ICON                    "res\\idr_dial.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Open Workspace",              ID_FILE_OPEN_WORKSPACE
+        MENUITEM "Close Workspace",             ID_FILE_CLOSE_WORKSPACE
+        MENUITEM SEPARATOR
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Execute",                     ID_FILE_EXECUTE
+        MENUITEM SEPARATOR
+        MENUITEM "Close All Windows",           ID_FILE_CLOSEALLWINDOWS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Workspace",                   ID_VIEW_WORKSPACE, CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "Raw Resources",               ID_VIEW_RAWRESOURCES
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Studio...",            ID_APP_ABOUT
+    END
+END
+
+IDR_HEXTYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Open Workspace",              ID_FILE_OPEN_WORKSPACE
+        MENUITEM "Close Workspace",             ID_FILE_CLOSE_WORKSPACE
+        MENUITEM SEPARATOR
+        MENUITEM "Execute",                     ID_FILE_EXECUTE
+        MENUITEM SEPARATOR
+        MENUITEM "Close All Windows",           ID_FILE_CLOSEALLWINDOWS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Workspace",                   ID_VIEW_WORKSPACE, CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "Raw Resources",               ID_VIEW_RAWRESOURCES
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 57648
+        MENUITEM "&Cascade",                    57650
+        MENUITEM "&Tile",                       57651
+        MENUITEM "&Arrange Icons",              57649
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Studio...",            ID_APP_ABOUT
+    END
+END
+
+IDR_ACCELTYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Open Workspace",              ID_FILE_OPEN_WORKSPACE
+        MENUITEM "Close Workspace",             ID_FILE_CLOSE_WORKSPACE
+        MENUITEM SEPARATOR
+        MENUITEM "Execute",                     ID_FILE_EXECUTE
+        MENUITEM SEPARATOR
+        MENUITEM "Close All Windows",           ID_FILE_CLOSEALLWINDOWS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Workspace",                   ID_VIEW_WORKSPACE, CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "Raw Resources",               ID_VIEW_RAWRESOURCES
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 57648
+        MENUITEM "&Cascade",                    57650
+        MENUITEM "&Tile",                       57651
+        MENUITEM "&Arrange Icons",              57649
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Studio...",            ID_APP_ABOUT
+    END
+END
+
+IDR_ICONTYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Open Workspace",              ID_FILE_OPEN_WORKSPACE
+        MENUITEM "Close Workspace",             ID_FILE_CLOSE_WORKSPACE
+        MENUITEM SEPARATOR
+        MENUITEM "Execute",                     ID_FILE_EXECUTE
+        MENUITEM SEPARATOR
+        MENUITEM "Close All Windows",           ID_FILE_CLOSEALLWINDOWS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Workspace",                   ID_VIEW_WORKSPACE, CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "Raw Resources",               ID_VIEW_RAWRESOURCES
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 57648
+        MENUITEM "&Cascade",                    57650
+        MENUITEM "&Tile",                       57651
+        MENUITEM "&Arrange Icons",              57649
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Studio...",            ID_APP_ABOUT
+    END
+END
+
+IDR_BITMAPTYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Open Workspace",              ID_FILE_OPEN_WORKSPACE
+        MENUITEM "Close Workspace",             ID_FILE_CLOSE_WORKSPACE
+        MENUITEM SEPARATOR
+        MENUITEM "Execute",                     ID_FILE_EXECUTE
+        MENUITEM SEPARATOR
+        MENUITEM "Close All Windows",           ID_FILE_CLOSEALLWINDOWS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Workspace",                   ID_VIEW_WORKSPACE, CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "Raw Resources",               ID_VIEW_RAWRESOURCES
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 57648
+        MENUITEM "&Cascade",                    57650
+        MENUITEM "&Tile",                       57651
+        MENUITEM "&Arrange Icons",              57649
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Studio...",            ID_APP_ABOUT
+    END
+END
+
+IDR_DIALOGTYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Open Workspace",              ID_FILE_OPEN_WORKSPACE
+        MENUITEM "Close Workspace",             ID_FILE_CLOSE_WORKSPACE
+        MENUITEM SEPARATOR
+        MENUITEM "Execute",                     ID_FILE_EXECUTE
+        MENUITEM SEPARATOR
+        MENUITEM "Close All Windows",           ID_FILE_CLOSEALLWINDOWS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Workspace",                   ID_VIEW_WORKSPACE, CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "Raw Resources",               ID_VIEW_RAWRESOURCES
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 57648
+        MENUITEM "&Cascade",                    57650
+        MENUITEM "&Tile",                       57651
+        MENUITEM "&Arrange Icons",              57649
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Studio...",            ID_APP_ABOUT
+    END
+END
+
+IDR_MENUTYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Open Workspace",              ID_FILE_OPEN_WORKSPACE
+        MENUITEM "Close Workspace",             ID_FILE_CLOSE_WORKSPACE
+        MENUITEM SEPARATOR
+        MENUITEM "Execute",                     ID_FILE_EXECUTE
+        MENUITEM SEPARATOR
+        MENUITEM "Close All Windows",           ID_FILE_CLOSEALLWINDOWS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Workspace",                   ID_VIEW_WORKSPACE, CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "Raw Resources",               ID_VIEW_RAWRESOURCES
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW_WINDOW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE_ICONS
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Studio...",            ID_APP_ABOUT
+    END
+END
+
+IDR_STRINGTABLETYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Open Workspace",              ID_FILE_OPEN_WORKSPACE
+        MENUITEM "Close Workspace",             ID_FILE_CLOSE_WORKSPACE
+        MENUITEM SEPARATOR
+        MENUITEM "Execute",                     ID_FILE_EXECUTE
+        MENUITEM SEPARATOR
+        MENUITEM "Close All Windows",           ID_FILE_CLOSEALLWINDOWS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Workspace",                   ID_VIEW_WORKSPACE, CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "Raw Resources",               ID_VIEW_RAWRESOURCES
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 57648
+        MENUITEM "&Cascade",                    57650
+        MENUITEM "&Tile",                       57651
+        MENUITEM "&Arrange Icons",              57649
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Studio...",            ID_APP_ABOUT
+    END
+END
+
+IDR_VERSIONTYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Open Workspace",              ID_FILE_OPEN_WORKSPACE
+        MENUITEM "Close Workspace",             ID_FILE_CLOSE_WORKSPACE
+        MENUITEM SEPARATOR
+        MENUITEM "Execute",                     ID_FILE_EXECUTE
+        MENUITEM SEPARATOR
+        MENUITEM "Close All Windows",           ID_FILE_CLOSEALLWINDOWS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Workspace",                   ID_VIEW_WORKSPACE, CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "Raw Resources",               ID_VIEW_RAWRESOURCES
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 57648
+        MENUITEM "&Cascade",                    57650
+        MENUITEM "&Tile",                       57651
+        MENUITEM "&Arrange Icons",              57649
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Studio...",            ID_APP_ABOUT
+    END
+END
+
+IDM_CTXT_RESVIEW MENU 
+BEGIN
+    POPUP "CTXT"
+    BEGIN
+        MENUITEM "View Hex",                    ID_CTXT_VIEWHEX
+        MENUITEM "View With...",                ID_CTXT_VIEWWITH
+    END
+END
+
+IDM_CTXT_DLGVIEW MENU 
+BEGIN
+    POPUP "CTXT"
+    BEGIN
+        MENUITEM "View Hex",                    ID_CTXT_VIEWHEX
+        MENUITEM "View With...",                ID_CTXT_VIEWWITH
+        MENUITEM SEPARATOR
+        MENUITEM "Properties",                  ID_CTXT_DLGVIEW_PROPERTIES
+    END
+END
+
+IDM_CTXT_HEXVIEW MENU 
+BEGIN
+    POPUP "CTXT"
+    BEGIN
+        MENUITEM "View BYTE",                   ID_CTXT_HEXVIEW_VIEWBYTE
+        MENUITEM "View WORD",                   ID_CTXT_HEXVIEW_VIEWWORD
+        MENUITEM "View DWORD",                  ID_CTXT_HEXVIEW_VIEWDWORD
+        MENUITEM SEPARATOR
+        MENUITEM "View With...",                ID_CTXT_VIEWWITH
+    END
+END
+
+IDM_CTXT_RESTREEVIEW MENU 
+BEGIN
+    POPUP "CTXT"
+    BEGIN
+        MENUITEM "View",                        ID_CTXT_VIEW
+        MENUITEM "View Hex",                    ID_CTXT_VIEWHEX
+        MENUITEM "View With...",                ID_CTXT_VIEWWITH
+    END
+END
+
+IDR_DASMTYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Open Workspace",              ID_FILE_OPEN_WORKSPACE
+        MENUITEM "Close Workspace",             ID_FILE_CLOSE_WORKSPACE
+        MENUITEM SEPARATOR
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Execute",                     ID_FILE_EXECUTE
+        MENUITEM SEPARATOR
+        MENUITEM "Close All Windows",           ID_FILE_CLOSEALLWINDOWS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Workspace",                   ID_VIEW_WORKSPACE, CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "Raw Resources",               ID_VIEW_RAWRESOURCES
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 57648
+        MENUITEM "&Cascade",                    57650
+        MENUITEM "&Tile",                       57651
+        MENUITEM "&Arrange Icons",              57649
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Studio...",            ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    "G",            ID_DASM_GOTO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 63
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "About DSM Studio v0.75"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,20
+    LTEXT           "DSM Studio v0.75",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2004",IDC_STATIC,40,48,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+    LTEXT           "Written by Mark McGuill",IDC_STATIC,40,28,119,8
+END
+
+IDD_DLGPROPERTIES DIALOGEX 0, 0, 264, 180
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LBSTYLES,3,13,127,87,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LBEXSTYLES,134,13,127,87,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Styles",IDC_STATIC,3,3,20,8
+    LTEXT           "Extended Styles",IDC_STATIC,134,3,53,8
+    LTEXT           "Other",IDC_STATIC,3,101,20,8
+    EDITTEXT        IDC_EDCONTROL,3,112,258,65,ES_MULTILINE | ES_AUTOHSCROLL
+END
+
+IDD_DASMCALLSTACK DIALOGEX 0, 0, 103, 268
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LISTBOX         IDC_CALLSTACK,2,22,99,199,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Back (Backspace)",IDC_BACKUP,4,4,95,14
+    LTEXT           "Enter => Follow Jump or Call\n\nBackspace => Return From Jump",
+                    IDC_STATIC,2,227,99,39
+END
+
+IDD_CHOOSEVIEWER DIALOGEX 0, 0, 164, 102
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Choose Viewer"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,107,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,107,24,50,14
+    LISTBOX         IDC_LBVIEWERS,7,7,92,88,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_ICONFRAMEHEAD DIALOGEX 0, 0, 268, 18
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Device Images:",IDC_STATIC,9,5,50,8
+    LTEXT           "Cursor Hotspot (xx,xx)",IDC_STHOTSPOT,162,5,96,8
+    COMBOBOX        IDC_CMBDEV,64,3,91,80,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_GLOBAL_VIEW_PANE DIALOGEX 0, 0, 442, 25
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,75,0,1
+ PRODUCTVERSION 0,75,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "SoonamiSoft"
+            VALUE "FileVersion", "0.75.0.1"
+            VALUE "InternalName", "Studio.exe"
+            VALUE "LegalCopyright", "(c) SoonamiSoft.  All rights reserved."
+            VALUE "OriginalFilename", "Studio.exe"
+            VALUE "ProductName", "DSM Studio"
+            VALUE "ProductVersion", "0.75.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_DLGPROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 261
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 177
+    END
+
+    IDD_DASMCALLSTACK, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 101
+        BOTTOMMARGIN, 266
+    END
+
+    IDD_CHOOSEVIEWER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 157
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+    END
+
+    IDD_GLOBAL_VIEW_PANE, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 440
+        BOTTOMMARGIN, 23
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "DSM Studio\n\n\nAll Win32 Modules (*.exe; *.dll)\n.exe;.dll\nDSM Studio\n"
+    IDS_RESOURCE_NO_NONDEFAULT_STRINGTABLE_VIEW 
+                            "You cannot view string table raw data here, if you wish to do this you must select View Raw Resources from the View menu."
+    IDS_STRVIEW_HEAD_ID     "ID"
+    IDS_FORMAT_RESTREE_RESIDSTRING """%s"""
+    IDS_FORMAT_RESTREE_RESNAMEDOBJ """%s"" [%s]"
+    IDS_FORMAT_RESTREE_RESOBJ "%0.3d [%s]"
+    IDS_FORMAT_RESTREE_STRINGTABLE "Resource: String Table [%s]"
+    IDS_ERROR_STRINGTABLE_LOAD 
+                            "There was an error loading this String Table\nPlease Ensure Executable is Valid."
+    IDS_FORMAT_RESDOCTITLE  "Resource: %s (%s) [%s]"
+    IDS_FORMAT_DASM_ENTRYPOINT "Entrypoint"
+    IDR_DASMTYPE            "Disassembly\n\n\n\n\n\n"
+    IDS_FORMAT_DASM_NICE_TITLE "%s (%s) [0x%0.8X]"
+    IDS_DASM_COULD_NOT_DASM "Could not disassemble this location."
+    IDS_DASM_SUCCESSFUL_DASM "Location successfully disassembled."
+    IDS_FORMAT_IMPEXP_EXP_FORWARDER "%s [Ord: 0x%0.4X] => %s"
+    IDR_WORKSPACE_RESOURCES "Res"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FORMAT_IMPEXP_EXP_NORMAL "%s [Ord: 0x%0.4X]"
+    IDS_IMPEXP_EXPBYNAME_ROOT "Exported By Name"
+    IDS_IMPEXP_EXPBYORD_ROOT "Exported By Ordinal"
+    IDS_IMPEXP_FMT_MODNAME  "%s (%d)"
+    IDS_IMPEXP_IMPORT_READERROR "Error Reading This Import"
+    IDS_IMPEXP_FMT_ORDINALIMP_ONLY "Ord: 0x%0.4X "
+    IDS_IMPEXP_IMPBYNAME_ROOT "Imported By Name"
+    IDS_IMPEXP_IMPBYORD_ROOT "Imported By Ordinal"
+    IDS_DELAYLOADROOTNAME   "Delay Load Modules (%d)"
+    IDS_IMPEXP_EXPORT_READERROR "Error Reading This Export"
+    IDS_IMPORTROOTNAME      "Imports (%d)"
+    IDS_EXPORTROOTNAME      "Exports (%d)"
+    IDR_WORKSPACE_IMPEXP    "ImpXp"
+    IDS_SETRESPARAMS_ERROR_UNKNOWN 
+                            "An unknown error occured while creating this view. Ensure executable is valid."
+    IDS_MAINFRAME_TITLE_CLOSED "Studio"
+    IDS_MAINFRAME_TITLE_OPEN "%s - DSM Studio"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_WORKSPACE_DASM      "Dasm"
+    IDS_GLOBAL_VIEW_BAR_CAPTION "Global View"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILE_OPEN_WORKSPACE_TITLE "Open Workspace ..."
+    IDS_STRVIEW_HEAD_STRING "String"
+    IDS_VERVIEW_HEAD_FIELD  "Field"
+    IDS_VERVIEW_HEAD_VALUE  "Value"
+    IDS_ERROR_MENU_EXTENDED "Extended menu resources not supported in this view.\nUse hex view to see internal structure."
+    IDS_ICONVIEW_FORMAT_DEVICE_IMAGE "(%d x %d) %d Colors"
+    IDS_ICONVIEW_CURSOR_HOTSPOT "Cursor Hotspot: (%d,%d)"
+    IDS_DLGVIEW_DLGPROP_STR "Style:\t(0x%0.8X)\r\nExStyle:\t(0x%0.8X)\r\nRect:\t(%d,%d) => (%d,%d) := (%dx%d); <== (Dlg Units)\r\nTitle:\t(""%s"")\r\nClass:\t(ORD: 0x%0.4X) (%s)\r\nMenu:\t(ORD: 0x%0.4X) (%s)\r\nFont:\t%s, Size: %d, Weight: %d, Italic: %d"
+    IDS_DLGVIEW_CTRLPROP_STR 
+                            "Style:\t(0x%0.8X)\r\nExStyle:\t(0x%0.8X)\r\nRect:\t(%d,%d) => (%d,%d) := (%dx%d); <== (Dlg Units)\r\nTitle:\t(ORD: 0x%0.4X) (""%s"")\r\nClass:\t(ORD: 0x%0.4X) (%s)\r\nID:\t(0x%0.4X)\r\nHelp ID:\t(0x%0.4X)"
+    IDS_DLGVIEW_PREDEF_CLASS_LISTBOX "List Box"
+    IDS_DLGVIEW_PREDEF_CLASS_BUTTON "Button"
+    IDS_DLGVIEW_PREDEF_CLASS_EDIT "Edit"
+    IDS_DLGVIEW_PREDEF_CLASS_STATIC "Static"
+    IDS_DLGVIEW_PREDEF_CLASS_SCROLLBAR "Scroll Bar"
+    IDS_DLGVIEW_PREDEF_CLASS_COMBOBOX "Combo Box"
+    IDS_ERROR_DLG_FAIL      "There was an error creating this dialog.\nUse hex view to see internal structures."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_BITMAP_LOAD   "Failure loading this bitmap.\nUse hex view to see raw data."
+    IDS_ACCEL_ASCII_CTRL    "^%c"
+    IDS_ACCEL_CTRL_PLUS     "Ctrl + "
+    IDS_ACCEL_ALT_PLUS      "Alt + "
+    IDS_ACCEL_SHIFT_PLUS    "Shift + "
+    IDS_ACCEL_HEAD_ID       "ID"
+    IDS_ACCEL_HEAD_KEY      "Key"
+    IDR_ACCELTYPE           "Accelerator\n\n\n\n\n\n"
+    IDR_BITMAPTYPE          "Bitmap\n\n\n\n\n\n"
+    IDR_ICONTYPE            "Icon\n\n\n\n\n\n"
+    IDR_HEXTYPE             "Hex\n\n\n\n\n\n"
+    IDR_DIALOGTYPE          "Dialog\n\n\n\n\n\n"
+    IDR_MENUTYPE            "Menu\n\n\n\n\n\n"
+    IDR_STRINGTABLETYPE     "String Table\n\n\n\n\n\n"
+    IDR_VERSIONTYPE         "Version\n\n\n\n\n\n"
+    IDS_IMPEXP_TLB_ROOT     "Type Library"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_WORKSPACE       "View workspace"
+    ID_VIEW_RAWRESOURCES    "View raw format resources"
+    ID_FILE_EXECUTE         "Execute this file"
+    ID_FILE_CLOSEALLWINDOWS "Close all document windows"
+    ID_FILE_CLOSE_WORKSPACE "Close Workspace"
+    ID_FILE_OPEN_WORKSPACE  "Open Workspace"
+    ID_CTXT_VIEWHEX         "View in hexadecimal viewer"
+    ID_CTXT_HEXVIEW_VIEWBYTE "View in BYTE format"
+    ID_CTXT_HEXVIEW_VIEWWORD "View in WORD format"
+    ID_CTXT_HEXVIEW_VIEWDWORD "View in DWORD format"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_CLOSE           "Close"
+    ID_FILE_PRINT           "Print"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "About Studio..."
+    ID_APP_EXIT             "Exit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "View toolbar"
+    ID_VIEW_STATUS_BAR      "View status bar"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CTXT_DLGVIEW_PROPERTIES "View dialog properties"
+    ID_CTXT_VIEW            "View"
+    ID_WINDOW_NEW_WINDOW    "New Window"
+    ID_WINDOW_TILE          "Tile"
+    ID_WINDOW_ARRANGE_ICONS "Arrange Icons"
+    ID_CTXT_VIEWWITH        "View With..."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_COPY            "Copy"
+    ID_EDIT_CUT             "Cut"
+    ID_EDIT_PASTE           "Paste"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_CASCADE       "Cascade"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral (Sys. Default) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUSD)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_SYS_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DASMGOTODIALOG DIALOGEX 0, 0, 181, 30
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Goto Address"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Go",IDOK,124,7,50,14
+    COMBOBOX        IDC_CMBADDRESS,7,7,106,54,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DASMGOTODIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 174
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 21
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Neutral (Sys. Default) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (Ireland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENI)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_EIRE
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_DOWN                BITMAP                  "res\\up1.bmp"
+IDB_UP                  BITMAP                  "res\\bmp00001.bmp"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\Studio.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (Ireland) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\Studio.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,4 @@
+1. Profile it and make sure we are hitting the code paths.
+2. Shift Instruction table out to a separate file (poss. XML?)
+3. pedasm makes this project windows only (tough port due to Exceptions 
+   (EXCEPTION_ACCESS_VIOLATION == SIGSEGV)

@@ -1,0 +1,12 @@
+1. Multithreaded + progress indicators while disasm
+2. Move selection stuff out of CTextView, its to complex and should be implemented in a derived
+   class
+3. Any jumps or calls to jmps should be called j_(whatever jump or call is to if it has a symbol)
+   these are common occurence (thunks)
+4. Strings
+6. Global Viewer
+8. Nice structure type view of exe header when looking at PE
+9. Include Section Names in address field and in symbol table. i.e ".text start" ".data start" etc
+10. Header starts and all items that are part of exe header shuld have symbols too
+11. Interactive, If i press c on a data area try to make it code... etc
+12. DB of XRefs
